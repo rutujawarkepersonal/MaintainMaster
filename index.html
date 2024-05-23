@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+         -->
+
+         <script src="https://kit.fontawesome.com/1fc8bd02e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+    <!-- ****************NavBar****************** -->
+    <section class="navbar-section">
+        <nav>
+            
+            <ul class="sidebar">
+               
+                <div class="inner-div-sidebar">
+                
+                    <li><p class="mm-navbar-logo-for-mob">MaintainMaster</p></li>
+            
+            
+                    <p onclick=hideSidebar()>
+                        <a href="#" ><i class="fa-solid fa-xmark" style="font-size: larger; color: black;"></i></a>
+                    </p>
+            
+            </div>
+                <li id="home-nav"><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contactUs.html">Contact us</a></li>
+                <!-- <div class="navbar-social-media-icon">
+                    <img src="images/linkedin-1.png"  class="navbar-social-media-icon-img" alt="">
+                    <img src="images/facebook-1.png" class="navbar-social-media-icon-img" alt="">
+                    <img src="images/instagram-1.png" class="navbar-social-media-icon-img" alt="">
+                </div> -->
+
+                <div class="navbar-copywright">
+                    <p>©2024 MaintainMaster. All rights reserved</p>
+                </div>
+            </ul>
+            <ul>
+                <li><p class="mm-navbar-logo1">MaintainMaster</p></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About us</a></li>
+                <li class="hideOnMobile"><a href="service.html">Services</a></li>
+                <li class="hideOnMobile"><a href="contactUs.html">Contact us</a></li>
+                <li class="menu-button" onclick=toggleSidebar()><a href="#"><i class="fas fa-bars"
+                            id="sidebari1"></i></a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.toggle('open');
+    
+            if (sidebar.classList.contains('open')) {
+                body.style.overflowY = 'hidden'; // Disable vertical scrolling
+            } else {
+                body.style.overflowY = 'auto'; // Enable vertical scrolling
+            }
+        }
+    
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.remove('open');
+            body.style.overflowY = 'auto'; // Enable vertical scrolling
+        }
+    </script>
+
+    <!-- *********Navbar Ended********* -->
+
+
+    <!----------------------- Section 1 ------------------------>
+
+    <section class="sec1">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <div class="col-md-6">
+                    <p class="sec1-title">Your One-Stop Solution for Home Maintenance</p>
+                    <p class="mb-5">MaintainMaster provides top-quality home maintenance services, specializing in
+                        electrical works, plumbing, and general home upkeep. Our experienced team is dedicated to
+                        ensuring your home remains in perfect condition.</p>
+
+                    <a href="" class="sec1-left-div-btn">ContactUs</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/sec1-img.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 2 ------------------------>
+
+    <section>
+        <div class="container">
+            <div class="sec2-row">
+                <div class="row  p-0 m-0 w-100">
+
+                    <div class="col-md-4">
+                        <div class="card sec2-first-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/s1.png" alt="" width="30%" class="sec2-card-img">
+
+                                </div>
+                                <p class="sec2-card-text">REPAIR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class=" sec2-sec-card2">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/s2.png" alt="" width="30%" class="sec2-card-img">
+
+                                </div>
+                                <p class="sec2-card-text">IMPROVE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card  sec2-third-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/s3.png" alt="" width="30%" class="sec2-card-img">
+
+                                </div>
+                                <p class="sec2-card-text">MAINTAIN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 3 ------------------------>
+    <section class="sec3">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <div class="col-md-6">
+                    <p class="sec3-title">ABOUT US</p>
+                    <p class="mb-5">MaintainMaster was founded with the goal of providing reliable and affordable home
+                        maintenance services. Our team comprises skilled professionals with years of experience in
+                        electrical works, plumbing, and general home upkeep.
+                    </p>
+
+                    <a href="" class="sec3-left-div-btn">Read More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/about-img.jpg" alt="" width="100%" class="sec3-right-div-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 4 ------------------------>
+
+    <section class="sec4">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <div class="col-md-6">
+                    <img src="images/professional-img.png" alt="" width="100%" class="sec4-right-div-img">
+                </div>
+                <div class="col-md-6">
+                    <p class="sec4-title">WE PROVIDE PROFESSIONAL HOME SERVICES.</p>
+                    <p class="mb-5">At MaintainMaster, we offer a wide range of home maintenance services to keep your
+                        home in top shape. Here are some of the services we provide:</p>
+
+                    <a href="" class="sec4-right-div-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 5 ------------------------>
+    <section class="sec5">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <p class="sec5-title">OUR SERVICES</p>
+                <div class="col-md-4">
+                    <div class="card sec5-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="images/s1.png" alt="" width="30%" class="">
+
+                            </div>
+                            <p class="sec5-card-title">Maintenance</p>
+                            <p class="text-center">Installation of lighting fixtures and ceiling fans.
+                                Electrical wiring and rewiring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card sec5-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="images/s2.png" alt="" width="30%" class="">
+
+                            </div>
+                            <p class="sec5-card-title">Electrical</p>
+                            <p class="text-center">Safe and reliable electrical installations and repairs.Installation
+                                of lighting fixtures and ceiling fans.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card sec5-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="images/s3.png" alt="" width="30%" class="">
+
+                            </div>
+                            <p class="sec5-card-title">Plumbing</p>
+                            <p class="text-center">Fixing leaks and blockages.
+                                Installation and repair of pipes and fixtures.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="" class="sec5-btn mt-4">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 6 ------------------------>
+
+    <section class="sec6">
+        <div class="container">
+
+            <div class="row">
+                <p class="sec6-title">What Our Clients Say
+                <p>
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="display-flex-alg-center-jst-center">
+                                <div class="card sec6-card">
+                                    <div class="card-body">
+                                        <p>
+                                            <img src="images/client-1.jpg" alt="" class="sec6-client-img">
+                                            Jorch Morik
+                                        </p>
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="display-flex-alg-center-jst-center">
+
+                                <div class="card sec6-card">
+                                    <div class="card-body">
+                                        <p>
+                                            <img src="images/client-2.jpg" alt="" class="sec6-client-img">
+                                            Jorch Morik
+                                        </p>
+
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="display-flex-alg-center-jst-center">
+                                <div class="card sec6-card">
+                                    <div class="card-body">
+                                        <p>
+                                            <img src="images/client-2.jpg" alt="" class="sec6-client-img">
+                                            Jorch Morik
+                                        </p>
+
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Section 7 ------------------------>
+    <section class="sec7">
+        <div class="sec7-main-container">
+            <div class="container">
+                <div class="row m-0 p-0 w-100">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p class="sec7-title">Let us know what you think!</p>
+                        <div>
+                            <div class="d-flex ">
+                                <img src="images/sec10-left-div-icon1.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">info@nucleusconsultancy.in
+                                <p>
+                            </div>
+                            <div class="d-flex ">
+                                <img src="images/sec10-left-div-icon2.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">www.nucleusconsultancy.in</p>
+                            </div>
+                            <div class="d-flex ">
+
+                                <img src="images/sec10-left-div-icon3.png" alt="" class="sec7-left-div-icons">
+
+                                <p class="sec7-left-div-content">+91 9930111875</p>
+                            </div>
+                            <div class="d-flex ">
+
+                                <img src="images/sec10-left-div-icon4.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">Office No. 14/29, Samta Nagar Society, Beside Gate No.
+                                    02, Samta Nagar, Thane (W) - 400606</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mt-5 shadow-right-bottom">
+                            <div class="card-body">
+                                <form id="contactForm" class="row g-4">
+                                    <div class="col-6 ">
+                                        <label for="" class="nucleus-web-sec10-lbl">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Name">
+                                        <div id="nameValidation" class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <label for="" class="nucleus-web-sec10-lbl">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email"
+                                            placeholder="Email">
+                                        <div id="company_nameValidation" class="invalid-feedback">Please enter your
+                                            Email</div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <label for="" class="nucleus-web-sec10-lbl">Phone</label>
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone">
+                                        <div id="cityValidation" class="invalid-feedback">Please enter your phone.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="" class="nucleus-web-sec10-lbl">Company</label>
+                                        <input type="text" class="form-control" id="company" name="company"
+                                            placeholder="Company Name">
+                                        <div id="registration_stateValidation" class="invalid-feedback">Please enter
+                                            your company.</div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <label for="" class="nucleus-web-sec10-lbl">Massage</label>
+                                        <input type="text" class="form-control" id="headquarters_address"
+                                            name="headquarters_address" placeholder="Type your massage here.....">
+                                        <div id="headquarters_addressValidation" class="invalid-feedback">Please enter
+                                            your
+                                            headquarters address.</div>
+                                    </div>
+
+                                    <div class="col-12 ">
+                                        <button type="submit" class="sec7-btn ">Send Massage</button>
+                                    </div>
+                                    <div id="status"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------- Footer ---------------------------->
+    <section class="footer">
+        <div class="nucleus-web-sec11">
+            <div class="container">
+                <div class="row m-0 p-0 w-100">
+                    <div class="col-lg-4 nucleus-web-sec11-col1-div">
+                        <img src="images/footer-logo.png" alt="">
+
+
+                    </div>
+
+                    <div class="col-lg-4 nucleus-web-sec11-col2-div d-flex justify-content-center align-items-center">
+
+
+                        <!-- <div class="nucleus-web-sec11-col2-div-link"> -->
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-4 nucleus-web-sec11-col3-div">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="nucleus-web-sec11-footer-bottom d-flex justify-content-center align-items-center ">
+                Copyright © 2024 Nucleus | All Rights Reserved | Terms and Conditions | Privacy Policy
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+/* styles.css */
+.services-sec2{
+    background-color: #d1e3ff ;
+}
+.service-section {
+    padding: 50px 0;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #ff8a1d;
+}
+
+.service-title {
+    color: #0355cc;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    padding: 5px 0;
+}
+
+.service-list li:before {
+    content: "\2022";
+    color: #ff8a1d;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ /* Unique Design Elements */
+
+ .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card::after {
+    content: 'Learn More';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff8a1d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: bottom 0.3s, opacity 0.3s;
+    z-index: 2;
+}
+
+.service-card:hover::after {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.service-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1;
+    width: 90%;
+}
+
+.service-card.active .service-info {
+    display: block;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h2, h3 {
+    color: #0355cc; /* Primary color for headings */
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    background-color: #d1e3ff; /* Secondary color for card background */
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card .card-header {
+    background: #0355cc; /* Primary color for card header */
+    color: white;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.pricing-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card .card-body ul {
+    padding-left: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.pricing-card .card-body ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.pricing-card .card-body ul li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .card-footer {
+    background: #f8f9fa;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.pricing-card .btn-primary {
+    background: #ff8a1d; /* Accent color for buttons */
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.note {
+    background: #0355cc; /* Primary color for note background */
+    color: white;
+    font-style: italic;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #ff8a1d; /* Accent color for note border */
+}
+
+.accordion-button {
+    background-color: #d1e3ff;
+}
+
+/* Accent color */
+.accordion-button.collapsed {
+    background-color: #ff8a1d;
+}
+
+/* Accordion hover color */
+.accordion-button:not(.collapsed):hover {
+    background-color: #ff8a1d;
+}
+
+/* Accordion active color */
+.accordion-button:not(.collapsed):active {
+    background-color: #ff8a1d;
+}

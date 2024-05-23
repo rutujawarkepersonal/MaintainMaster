@@ -1,0 +1,349 @@
+.display-flex-alg-center-jst-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************* NavBar ***********************/
+/* Custom CSS for the navbar */
+.navbar {
+    background-color:#d1e3ff;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        padding: 10px 15px;
+    }
+}
+
+/**************************** Section 1 ***********************/
+
+.sec1{
+    background-color: #d1e3ff;
+    height: auto;
+}
+
+.sec1-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0355cc;
+    margin: 16% 9% 5% 2%;
+
+}
+.sec1-left-div-btn{
+    background-color: #ff8a1d;
+    border: 1px solid #ff8a1d;
+    padding: 2% 5% 2% 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.sec1-left-div-btn:hover{
+    background-color: transparent;
+    color: #ff8a1d;
+}
+@media (min-width:210px) and  (max-width:320px)
+{
+.sec1-title{
+    font-size: 1.1rem;
+}
+}
+
+/**************************** Section 2 ***********************/
+.sec2-card-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.sec2-row{
+    padding: 0% 0% 0% 0%;
+    margin: -9% 0% 0% 0%;
+}
+.sec2-card-img{
+    margin-top: 10%;
+    
+}
+.sec2-sec-card2{
+    background-color: #ff8a1d;
+    color: white;
+}
+.sec2-first-card:hover{
+    background-color: #ff8a1d;
+    color: white;
+}
+.sec2-third-card:hover{
+    background-color: #ff8a1d;
+    color: white;
+}
+
+@media (min-width:320px) and  (max-width:768px)
+{
+.sec2-sec-card{
+    margin-top: 4%;
+}
+.sec2-third-card{
+    margin-top: 4%;
+}
+}
+
+/**************************** Section 3 ***********************/
+
+.sec3{
+    margin-top: 10%;
+}
+.sec3-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sec3-left-div-btn{
+    background-color: #0355cc;
+  border: 1px solid #0355cc;
+    padding: 2% 5% 2% 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.sec3-left-div-btn:hover{
+    background-color: transparent;
+    color:  #0355cc;
+}
+
+@media (min-width:320px) and  (max-width:768px)
+{
+.sec3-right-div-img{
+    margin-top: 10%;
+}
+}
+
+/**************************** Section 4 ***********************/
+
+.sec4{
+    background-color: #d1e3ff;
+    margin-top: 10%;
+}
+
+.sec4-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0355cc;
+    margin-top: 20%;
+}
+.sec4-right-div-img{
+    margin-top: 15%;
+}
+.sec4-right-div-btn{
+    background-color: #ff8a1d;
+    border: 1px solid #ff8a1d;
+    padding: 2% 5% 2% 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.sec4-right-div-btn:hover{
+    background-color: transparent;
+    color: #ff8a1d;
+} 
+
+/**************************** Section 5 ***********************/
+
+.sec5{
+    
+    margin-top: 10%;
+}
+.sec5-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.sec5-card-title{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 5%;
+}
+.sec5-card:hover{
+    background-color: #ff8a1d;
+    color: white;
+}
+.sec5-card{
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+.sec5-btn{
+    background-color: #0355cc;
+    border: 1px solid #0355cc;
+    padding: 1% 3% 1% 3%;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      align-items: center;
+  }
+  .sec5-btn:hover{
+      background-color: transparent;
+      color:  #0355cc;
+  } 
+  
+  /**************************** Section 6 ***********************/
+
+.sec6{
+    
+    margin-top: 5%;
+}
+.sec6-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.client-testimonial p {
+    padding-bottom: 10px;
+  }
+  
+  .client-testimonial {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .sec6-client-img{
+    border-radius: 100%;
+  }
+  .sec6-card{
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+/**************************** Section 6 ***********************/
+
+.sec7{
+    
+    margin-top: 5%;
+}
+.nucleus-web-sec10-lbl{
+    color:#0355cc;
+    font-weight: 600;
+    font-size: 1.1rem;
+ }
+ .sec7-btn {
+  background-color:#0355cc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #0355cc;
+  border-radius: 10px;
+  padding: 1% 4% 1% 4%;
+ }
+ .sec7-title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color:#0355cc;
+  margin: 0% 25% 5% 0%;
+  
+}
+
+.sec7-left-div-icons{
+  width: 8%;
+    margin: 1% 3% 4% 3%;
+  
+ 
+}
+.sec7-left-div-content{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#0355cc;
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+    color: red !important;
+}
+@media (min-width:320px) and (max-width:530px)
+{
+  .nucleus-web-sec10-left-div-icons{
+    width: 11%;
+        margin: 1% 3% 3% 0%;
+        height: 5%;
+  }
+  .nucleus-web-sec10-left-div-content{
+    font-size: 1.1rem;
+    
+  }
+  .nucleus-web-sec10-left-div-content5{
+    font-size: 1.1rem;
+    
+  }
+}
+@media (min-width:768px) and (max-width:1193px)
+{
+  .nucleus-web-sec10-left-div-icons{
+    width: 14%;
+    margin: 1% 3% 4% 3%;
+    height: 5%;
+  }
+}
+
+
+/***************** Footer ***********************/
+.nucleus-web-sec11{
+    padding-top:5%;
+    padding-bottom: 5%;
+    background: #0a0f43;
+}
+.nucleus-web-sec11-footer-bottom{
+    color:#0355cc;
+    font-weight: 500;
+
+   
+  }
+  
+  .nucleus-web-sec11-col2-div a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0% 0% 0% 7%;
+  }
+  .social-icons li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons li a {
+    color:#0355cc;
+    font-size: 20px;
+    text-decoration: none;
+  }

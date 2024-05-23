@@ -1,0 +1,71 @@
+
+/**************************** Section 6 ***********************/
+
+.sec7{
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #d1e3ff;
+}
+.nucleus-web-sec10-lbl{
+    color:#0355cc;
+    font-weight: 600;
+    font-size: 1.1rem;
+ }
+ .sec7-btn {
+  background-color:#0355cc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #0355cc;
+  border-radius: 10px;
+  padding: 1% 4% 1% 4%;
+ }
+ .sec7-title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color:#0355cc;
+  margin: 0% 25% 5% 0%;
+  
+}
+
+.sec7-left-div-icons{
+  width: 8%;
+    margin: 1% 3% 4% 3%;
+  
+ 
+}
+.sec7-left-div-content{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#0355cc;
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+    color: red !important;
+}
+@media (min-width:320px) and (max-width:530px)
+{
+  .nucleus-web-sec10-left-div-icons{
+    width: 11%;
+        margin: 1% 3% 3% 0%;
+        height: 5%;
+  }
+  .nucleus-web-sec10-left-div-content{
+    font-size: 1.1rem;
+    
+  }
+  .nucleus-web-sec10-left-div-content5{
+    font-size: 1.1rem;
+    
+  }
+}
+@media (min-width:768px) and (max-width:1193px)
+{
+  .nucleus-web-sec10-left-div-icons{
+    width: 14%;
+    margin: 1% 3% 4% 3%;
+    height: 5%;
+  }
+}

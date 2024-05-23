@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/1fc8bd02e0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+     <!-- ****************NavBar****************** -->
+     <section class="navbar-section">
+        <nav>
+            
+            <ul class="sidebar">
+               
+                <div class="inner-div-sidebar">
+                
+                    <li><p class="mm-navbar-logo-for-mob">MaintainMaster</p></li>
+            
+            
+                    <p onclick=hideSidebar()>
+                        <a href="#" ><i class="fa-solid fa-xmark" style="font-size: larger; color: black;"></i></a>
+                    </p>
+            
+            </div>
+                <li id="home-nav"><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contactUs.html">Contact us</a></li>
+                <!-- <div class="navbar-social-media-icon">
+                    <img src="images/linkedin-1.png"  class="navbar-social-media-icon-img" alt="">
+                    <img src="images/facebook-1.png" class="navbar-social-media-icon-img" alt="">
+                    <img src="images/instagram-1.png" class="navbar-social-media-icon-img" alt="">
+                </div> -->
+
+                <div class="navbar-copywright">
+                    <p>©2024 MaintainMaster. All rights reserved</p>
+                </div>
+            </ul>
+            <ul>
+                <li><p class="mm-navbar-logo1">MaintainMaster</p></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About us</a></li>
+                <li class="hideOnMobile"><a href="service.html">Services</a></li>
+                <li class="hideOnMobile"><a href="contactUs.html">Contact us</a></li>
+                <li class="menu-button" onclick=toggleSidebar()><a href="#"><i class="fas fa-bars"
+                            id="sidebari1"></i></a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.toggle('open');
+    
+            if (sidebar.classList.contains('open')) {
+                body.style.overflowY = 'hidden'; // Disable vertical scrolling
+            } else {
+                body.style.overflowY = 'auto'; // Enable vertical scrolling
+            }
+        }
+    
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.remove('open');
+            body.style.overflowY = 'auto'; // Enable vertical scrolling
+        }
+    </script>
+
+    <!-- *********Navbar Ended********* -->
+
+
+
+    <section class="services-sec2">
+        <div class="container mt-0">
+            <h1 class="text-center mb-4">Our Services</h1>
+            <div class="row service-section">
+                <div class="col-md-6">
+                    <div class="service-card p-4 mb-4">
+                        <img src="images/crop-handworkers-making-measures.jpg" alt="Electrical Maintenance"
+                            class="service-img" width="100%">
+                        <h3 class="service-title">Electrical Maintenance Services</h3>
+                        <ul class="service-list">
+                            <li>Comprehensive electrical system inspections to identify potential issues and ensure
+                                safety and compliance.</li>
+                            <li>Checking and repairing faulty wiring, circuits, and outlets to prevent electrical
+                                hazards.</li>
+                            <li>Upgrading outdated electrical panels for improved efficiency and safety, and repairing
+                                any panel issues.</li>
+                            <li>Maintaining and replacing light fixtures, bulbs, and switches for optimal lighting
+                                functionality.</li>
+                            <li>Checking and testing electrical appliances for safety and functionality.</li>
+                        </ul>
+
+                        <div class="service-info">
+                            <h4>Additional Information</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam, libero eu rutrum
+                                luctus, lorem nunc condimentum eros, id pretium purus diam eu est.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card p-4 mb-4">
+                        <img src="images/plumbing-professional-doing-his-job.jpg" alt="Plumbing Maintenance"
+                            class="service-img" width="100%">
+                        <h3 class="service-title">Plumbing Maintenance Services</h3>
+                        <ul class="service-list">
+                            <li>Identifying and fixing leaks in pipes, faucets, and fixtures to prevent water damage.
+                            </li>
+                            <li>Clearing clogged drains and pipes to ensure proper water flow and prevent backups.</li>
+                            <li>Conducting inspections using cameras to detect any hidden pipe issues, such as corrosion
+                                or blockages.</li>
+                            <li>Flushing and inspecting water heaters to ensure efficient operation and extend their
+                                lifespan.</li>
+                            <li>Repairing or replacing fixtures such as faucets, toilets, and showers to prevent leaks
+                                and improve efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="service-card p-4 mb-4">
+                        <h3 class="service-title">Emergency Electrical and Plumbing Services</h3>
+                        <ul class="service-list">
+                            <li>Offering round-the-clock emergency services for urgent electrical and plumbing issues.
+                            </li>
+                            <li>Promptly responding to emergencies to minimize damage and inconvenience to customers.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="service-card p-4 mb-4">
+                        <h3 class="service-title">Preventive Maintenance Plans</h3>
+                        <ul class="service-list">
+                            <li>Tailoring maintenance plans to meet the specific needs of each customer's electrical and
+                                plumbing systems.</li>
+                            <li>Conducting regular inspections and maintenance to identify and address issues before
+                                they become major problems.</li>
+                            <li>Providing priority service to plan members for emergency repairs and regular maintenance
+                                visits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Pricing</h2>
+        <div class="row">
+            <!-- Basic Package -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 pricing-card">
+                    <div class="card-header text-center">
+                        <h4>Basic</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-unstyled flex-grow-1">
+                            <li><strong>Service 1:</strong> General Cleaning - ₹500</li>
+                            <li><strong>Service 2:</strong> Lawn Mowing - ₹700</li>
+                            <li><strong>Service 3:</strong> Basic Repairs - ₹1000</li>
+                        </ul>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary">Choose Basic</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Standard Package -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 pricing-card">
+                    <div class="card-header text-center">
+                        <h4>Standard</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-unstyled flex-grow-1">
+                            <li><strong>Service 1:</strong> General Cleaning - ₹800</li>
+                            <li><strong>Service 2:</strong> Lawn Mowing - ₹1200</li>
+                            <li><strong>Service 3:</strong> Basic Repairs - ₹1500</li>
+                            <li><strong>Service 4:</strong> Window Cleaning - ₹1800</li>
+                        </ul>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary">Choose Standard</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Premium Package -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 pricing-card">
+                    <div class="card-header text-center">
+                        <h4>Premium</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-unstyled flex-grow-1">
+                            <li><strong>Service 1:</strong> General Cleaning - ₹1500</li>
+                            <li><strong>Service 2:</strong> Lawn Mowing - ₹2000</li>
+                            <li><strong>Service 3:</strong> Basic Repairs - ₹2500</li>
+                            <li><strong>Service 4:</strong> Window Cleaning - ₹3000</li>
+                            <li><strong>Service 5:</strong> Full Home Inspection - ₹3500</li>
+                        </ul>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary">Choose Premium</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center note">Note: Packages can be customized based on your specific needs. Contact us for a
+            personalized quote!</p>
+    </div>
+
+    <div class="container">
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapse" aria-expanded="true" aria-controls="faqCollapse">
+                        Frequently Asked Questions
+                    </button>
+                </h2>
+                <div id="faqCollapse" class="accordion-collapse collapse" aria-labelledby="faqHeading"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>Q: Can I customize a package?</strong></p>
+                        <p>A: Yes, our packages can be customized to fit your specific needs. Please contact us for a
+                            personalized quote.</p>
+                        <p><strong>Q: Are your services available on weekends?</strong></p>
+                        <p>A: Yes, we offer services seven days a week, including weekends and holidays.</p>
+                        <p><strong>Q: Do you offer discounts for regular customers?</strong></p>
+                        <p>A: Yes, we have special discounts and offers for our regular customers. Please inquire for
+                            more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>

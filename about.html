@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/1fc8bd02e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+
+   <!-- ****************NavBar****************** -->
+   <section class="navbar-section">
+    <nav>
+        
+        <ul class="sidebar">
+           
+            <div class="inner-div-sidebar">
+            
+                <li><p class="mm-navbar-logo-for-mob">MaintainMaster</p></li>
+        
+        
+                <p onclick=hideSidebar()>
+                    <a href="#" ><i class="fa-solid fa-xmark" style="font-size: larger; color: black;"></i></a>
+                </p>
+        
+        </div>
+            <li id="home-nav"><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="service.html">Services</a></li>
+
+            <li><a href="contactUs.html">Contact us</a></li>
+            <!-- <div class="navbar-social-media-icon">
+                <img src="images/linkedin-1.png"  class="navbar-social-media-icon-img" alt="">
+                <img src="images/facebook-1.png" class="navbar-social-media-icon-img" alt="">
+                <img src="images/instagram-1.png" class="navbar-social-media-icon-img" alt="">
+            </div> -->
+
+            <div class="navbar-copywright">
+                <p>©2024 MaintainMaster. All rights reserved</p>
+            </div>
+        </ul>
+        <ul>
+            <li><p class="mm-navbar-logo1">MaintainMaster</p></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About us</a></li>
+            <li class="hideOnMobile"><a href="service.html">Services</a></li>
+            <li class="hideOnMobile"><a href="contactUs.html">Contact us</a></li>
+            <li class="menu-button" onclick=toggleSidebar()><a href="#"><i class="fas fa-bars"
+                        id="sidebari1"></i></a></li>
+        </ul>
+
+
+    </nav>
+</section>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.querySelector('body');
+        sidebar.classList.toggle('open');
+
+        if (sidebar.classList.contains('open')) {
+            body.style.overflowY = 'hidden'; // Disable vertical scrolling
+        } else {
+            body.style.overflowY = 'auto'; // Enable vertical scrolling
+        }
+    }
+
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.querySelector('body');
+        sidebar.classList.remove('open');
+        body.style.overflowY = 'auto'; // Enable vertical scrolling
+    }
+</script>
+
+<!-- *********Navbar Ended********* -->
+
+
+
+    <!----------- section1 -------------------->
+
+    <div class="mm-abt-sec1">
+
+        <div class="mm-abt-sec1-sub1">
+                <p class="mm-abt-sec1-sub1-p1">About Us</p>
+        </div>
+    </div>
+   <!----------- section2 -------------------->
+
+    <section class="abt-sec2">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <div class="col-md-6">
+                    <p class="about-sec2-title">Our Story:</p>
+                    <p class="mb-5">MaintainMaster was founded with the goal of providing reliable and affordable home maintenance services. Our team comprises skilled professionals with years of experience in electrical works, plumbing, and general home upkeep.
+                    </p>
+
+                    <a href="" class="abt-sec2-left-div-btn">Read More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/abt-sec2-img.jpg" alt="" width="100%" class="abt-sec2-right-div-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!----------- section3 -------------------->
+
+       <section class="abt-sec3">
+        <div class="container">
+            <div class="row p-0 m-0 w-100">
+                <div class="col-md-6">
+                    <img src="images/vision.jpeg" alt="" width="100%" class="abt-sec3-right-div-img">
+                   
+
+                    
+                </div>
+                <div class="col-md-6">
+                    <p class="abt-sec3-title">Our Vision:</p>
+                    <p class="mb-5 text-center">To be the leading provider of home maintenance solutions, known for our unparalleled quality, unwavering reliability, and unwavering commitment to customer satisfaction. Our mission is to transform the home maintenance experience through innovative solutions, exceptional craftsmanship, and a customer-first approach.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!----------- section4 -------------------->
+            <section class="abt-sec4">
+                <div class="container">
+                    <div class="row">                    
+                        <p class="abt-sec4-title">Our Team :</p>
+                       <div class="col-md-4">
+                        <div class="card abt-sec4-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/t-member1.jpeg" alt="" width="70%" class="">
+    
+                                </div>
+                                <p class="abt-sec4-card-title">Amit Shaha</p>
+                                <p class="abt-sec4-card-text">Electrician</p>
+                                <p class="card-bio">John has over 10 years of experience in electrical works and is certified in advanced home electrical systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card abt-sec4-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/t-member1.jpeg" alt="" width="70%" class="">
+    
+                                </div>
+                                <p class="abt-sec4-card-title">Amit Shaha</p>
+                                <p class="abt-sec4-card-text">Plumber</p>
+                                <p class="card-bio">Jane specializes in residential plumbing and has a keen eye for detail, ensuring every job is done right.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card abt-sec4-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/t-member1.jpeg" alt="" width="70%" class="">
+    
+                                </div>
+                                <p class="abt-sec4-card-title">Amit Shaha</p>
+                                <p class="abt-sec4-card-text">Maintenance Specialist</p>
+                                <p class="card-bio">Robert is a versatile maintenance specialist with expertise in various home repair and maintenance tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+    <!---------------------- Footer ---------------------------->
+    <section class="footer">
+        <div class="nucleus-web-sec11">
+            <div class="container">
+                <div class="row m-0 p-0 w-100">
+                    <div class="col-lg-4 nucleus-web-sec11-col1-div">
+                        <img src="images/footer-logo.png" alt="">
+
+
+                    </div>
+
+                    <div class="col-lg-4 nucleus-web-sec11-col2-div d-flex justify-content-center align-items-center">
+
+
+                        <!-- <div class="nucleus-web-sec11-col2-div-link"> -->
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-4 nucleus-web-sec11-col3-div">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="nucleus-web-sec11-footer-bottom d-flex justify-content-center align-items-center ">
+                Copyright © 2024 Nucleus | All Rights Reserved | Terms and Conditions | Privacy Policy
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>

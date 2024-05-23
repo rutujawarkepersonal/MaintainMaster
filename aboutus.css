@@ -1,0 +1,91 @@
+.mm-abt-sec1{
+    background-image: linear-gradient(to bottom, rgb(92 113 171 / 70%), rgb(25 45 127 / 70%)), linear-gradient(rgba(210, 180, 140, 0.5), rgba(210, 180, 140, 0.5)), url(images/about-sec1-bg.jpg);
+    /* background-image: linear-gradient(to bottom, rgb(66 66 66 / 70%), rgb(28 38 79 / 70%)), linear-gradient(rgba(210, 180, 140, 0.5), rgba(210, 180, 140, 0.5)), url(images/about-sec1-bg.jpg); */
+    background-size: cover;
+    background-position: bottom;
+ height: 100vh;   
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.mm-abt-sec1-sub1{
+
+}
+
+.mm-abt-sec1-sub1-p1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+}
+.abt-sec2{
+   
+}
+.about-sec2-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0355cc;
+    margin: 16% 9% 5% 2%;
+}
+.abt-sec2-left-div-btn{
+    background-color: #ff8a1d;
+    border: 1px solid #ff8a1d;
+    padding: 2% 5% 2% 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.abt-sec2-left-div-btn:hover{
+  background-color: transparent;
+  color: #ff8a1d;
+}
+.abt-sec2-right-div-img{
+    margin-top: 10%;
+    
+}
+
+/***************** About Us Section-3 *******************/
+.abt-sec3{
+    background-color: #d1e3ff;
+    
+}
+.abt-sec3-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0355cc;
+    margin: 4% 9% 5% 2%;
+    text-align: center;
+}
+.abt-sec3-right-div-img{
+    margin-top: 10%;
+    
+}
+/***************** About Us Section-3 *******************/
+
+.abt-sec4-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0355cc;
+   
+    
+}
+.abt-sec4-card-img1{
+    width: 70%;
+  
+}
+.abt-sec4-card-title{
+    color: #0355cc;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.abt-sec4-card-text{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.abt-sec4-card{
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}

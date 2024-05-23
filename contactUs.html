@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/1fc8bd02e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ****************NavBar****************** -->
+    <section class="navbar-section">
+        <nav>
+
+            <ul class="sidebar">
+
+                <div class="inner-div-sidebar">
+
+                    <li>
+                        <p class="mm-navbar-logo-for-mob">MaintainMaster</p>
+                    </li>
+
+
+                    <p onclick=hideSidebar()>
+                        <a href="#"><i class="fa-solid fa-xmark" style="font-size: larger; color: black;"></i></a>
+                    </p>
+
+                </div>
+                <li id="home-nav"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contactUs.html">Contact us</a></li>
+                <!-- <div class="navbar-social-media-icon">
+                    <img src="images/linkedin-1.png"  class="navbar-social-media-icon-img" alt="">
+                    <img src="images/facebook-1.png" class="navbar-social-media-icon-img" alt="">
+                    <img src="images/instagram-1.png" class="navbar-social-media-icon-img" alt="">
+                </div> -->
+
+                <div class="navbar-copywright">
+                    <p>©2024 MaintainMaster. All rights reserved</p>
+                </div>
+            </ul>
+            <ul>
+                <li>
+                    <p class="mm-navbar-logo1">MaintainMaster</p>
+                </li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About us</a></li>
+                <li class="hideOnMobile"><a href="service.html">Services</a></li>
+                <li class="hideOnMobile"><a href="contactUs.html">Contact us</a></li>
+                <li class="menu-button" onclick=toggleSidebar()><a href="#"><i class="fas fa-bars"
+                            id="sidebari1"></i></a></li>
+            </ul>
+
+
+        </nav>
+    </section>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.toggle('open');
+
+            if (sidebar.classList.contains('open')) {
+                body.style.overflowY = 'hidden'; // Disable vertical scrolling
+            } else {
+                body.style.overflowY = 'auto'; // Enable vertical scrolling
+            }
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            sidebar.classList.remove('open');
+            body.style.overflowY = 'auto'; // Enable vertical scrolling
+        }
+    </script>
+
+    <!-- *********Navbar Ended********* -->
+
+
+
+    <!----------------------- Section 7 ------------------------>
+
+
+    <section class="sec7">
+        <div class="sec7-main-container">
+            <div class="container">
+                <div class="row m-0 p-0 w-100">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p class="sec7-title">Contact Us</p>
+                        <div>
+                            <div class="d-flex ">
+                                <img src="images/sec10-left-div-icon1.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">info@nucleusconsultancy.in
+                                <p>
+                            </div>
+                            <div class="d-flex ">
+                                <img src="images/sec10-left-div-icon2.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">www.nucleusconsultancy.in</p>
+                            </div>
+                            <div class="d-flex ">
+
+                                <img src="images/sec10-left-div-icon3.png" alt="" class="sec7-left-div-icons">
+
+                                <p class="sec7-left-div-content">+91 9930111875</p>
+                            </div>
+                            <div class="d-flex ">
+
+                                <img src="images/sec10-left-div-icon4.png" alt="" class="sec7-left-div-icons">
+                                <p class="sec7-left-div-content">pune</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mt-5 shadow-right-bottom">
+                            <div class="card-body">
+                                <form id="contactForm" class="row g-4">
+                                    <div class="col-6">
+                                        <label for="name" class="nucleus-web-sec10-lbl">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Name">
+                                        <div id="nameValidation" class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="email" class="nucleus-web-sec10-lbl">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email"
+                                            placeholder="Email">
+                                        <div id="emailValidation" class="invalid-feedback">Please enter your Email</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="nucleus-web-sec10-lbl">Phone</label>
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone">
+                                        <div id="phoneValidation" class="invalid-feedback">Please enter your phone.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="company" class="nucleus-web-sec10-lbl">Company</label>
+                                        <input type="text" class="form-control" id="company" name="company"
+                                            placeholder="Company Name">
+                                        <div id="companyValidation" class="invalid-feedback">Please enter your Company
+                                            Name</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="massage" class="nucleus-web-sec10-lbl">Message</label>
+                                        <input type="text" class="form-control" id="massage" name="massage"
+                                            placeholder="Type your massage here.....">
+                                        <div id="massageValidation" class="invalid-feedback">Please enter your massage.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="nucleus-web-sec10-btn sec7-btn">Send Message</button>
+                                    </div>
+                                    <div id="status"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------- Footer ---------------------------->
+    <section class="footer">
+        <div class="nucleus-web-sec11">
+            <div class="container">
+                <div class="row m-0 p-0 w-100">
+                    <div class="col-lg-4 nucleus-web-sec11-col1-div">
+                        <img src="images/footer-logo.png" alt="">
+
+
+                    </div>
+
+                    <div class="col-lg-4 nucleus-web-sec11-col2-div d-flex justify-content-center align-items-center">
+
+
+                        <!-- <div class="nucleus-web-sec11-col2-div-link"> -->
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-4 nucleus-web-sec11-col3-div">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="nucleus-web-sec11-footer-bottom d-flex justify-content-center align-items-center ">
+                Copyright © 2024 Nucleus | All Rights Reserved | Terms and Conditions | Privacy Policy
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                var formData = new FormData(this);
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "send_email.php", true);
+                xhr.onload = function () {
+                    if (xhr.status == 200) {
+                        handleResponse(xhr.responseText);
+                    } else {
+                        console.error("Error sending email: " + xhr.statusText);
+                    }
+                };
+                xhr.send(formData);
+            });
+
+
+            const form = document.getElementById('contactForm');
+
+            const validationMessages = {
+                name: 'Please enter your name.',
+                email: 'Please enter a valid email address.',
+                phone: 'Please enter a valid phone number.',
+                company: 'Please enter your company name.',
+                massage: 'Please enter your message.'
+            };
+
+            const validationPatterns = {
+                name: /^[a-zA-Z\s]+$/,
+                email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                phone: /^\+?\d{10,14}$/, // Adjust this pattern according to your phone number format
+                company: /^[a-zA-Z0-9\s]+$/,
+                massage: /.+/ // Any non-empty string
+            };
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                let isValidForm = true;
+
+                Object.keys(validationMessages).forEach(function (key) {
+                    const input = document.getElementById(key);
+                    const validationMessage = document.getElementById(key + 'Validation');
+
+                    if (!validationPatterns[key].test(input.value.trim())) {
+                        validationMessage.innerText = validationMessages[key];
+                        validationMessage.style.display = 'block';
+                        input.classList.add('is-invalid');
+                        isValidForm = false;
+                    } else {
+                        validationMessage.innerText = '';
+                        validationMessage.style.display = 'none';
+                        input.classList.remove('is-invalid');
+                    }
+                });
+
+                if (isValidForm) {
+                    Swal.close();
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thanks for enquiring! We Will Contact You Soon.',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                    form.reset();
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please fill in all required fields correctly.',
+                    });
+                }
+            });
+
+            form.addEventListener('input', function (event) {
+                const input = event.target;
+                const validationMessage = document.getElementById(input.id + 'Validation');
+
+                if (!validationPatterns[input.id].test(input.value.trim())) {
+                    validationMessage.innerText = validationMessages[input.id];
+                    validationMessage.style.display = 'block';
+                    input.classList.add('is-invalid');
+                } else {
+                    validationMessage.innerText = '';
+                    validationMessage.style.display = 'none';
+                    input.classList.remove('is-invalid');
+                }
+            });
+        });
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script>
+</body>
+
+</html>

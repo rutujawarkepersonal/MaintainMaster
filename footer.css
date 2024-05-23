@@ -1,0 +1,35 @@
+
+/***************** Footer ***********************/
+.nucleus-web-sec11{
+    padding-top:5%;
+    padding-bottom: 5%;
+    background: #0a0f43;
+}
+.nucleus-web-sec11-footer-bottom{
+    color:#0355cc;
+    font-weight: 500;
+
+   
+  }
+  
+  .nucleus-web-sec11-col2-div a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0% 0% 0% 7%;
+  }
+  .social-icons li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons li a {
+    color:#0355cc;
+    font-size: 20px;
+    text-decoration: none;
+  }
